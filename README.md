@@ -23,7 +23,7 @@ Objective of our project is to create a Morse code transmitter. Our approach is 
 
 This way user can transmit characters represented by morse code.
 
-[!state_diag](img/projekt_state_diagrampng.png)
+![state_diag](img/projekt_state_diagrampng.png)
 
 <a name="hardware"></a>
 
