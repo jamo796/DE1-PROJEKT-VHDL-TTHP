@@ -5,7 +5,7 @@
 * Jan Pelka (responsible for xxx)
 * Jakub Tauber (responsible for xxx)
 * Anton Tsyhanov (responsible for xxx)
-* David Hamran (responsible for display driver module, github)
+* David Hamran (responsible for [display driver module](#disp_driver), github)
 ### Table of contents
 
 * [Project objectives](#objectives)
@@ -74,6 +74,8 @@ Link:
 
 ## VHDL modules description and simulations
 
+
+<a name="disp_driver"></a>
 ### Morse display driver
 This component is inspired by:[display driver](https://github.com/tomas-fryza/digital-electronics-1/tree/master/labs/07-display_driver)
 First 6 7-segment displays are used to display morse code. Last display is used to display normal character or number.
