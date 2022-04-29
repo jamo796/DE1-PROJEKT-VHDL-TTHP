@@ -23,7 +23,7 @@ Objective of our project is to create a Morse code transmitter. Our approach is 
 
 ### State diagram:
 
-![state_diag](img/projekt_state_diagrampng.png)
+![state_diag](images/projekt_state_diagrampng.png)
 
 ### Alphabet represented in binary
 
@@ -51,7 +51,7 @@ Objective of our project is to create a Morse code transmitter. Our approach is 
   
 ### Morse alphabet
 
-<img src="img/morse_alphabet.png" alt="morse" style="width:450px;"/>
+<img src="images/morse_alphabet.png" alt="morse" style="width:450px;"/>
   
 In addition @ symbol is represented as **.--.-.**
     
@@ -60,7 +60,7 @@ In addition @ symbol is represented as **.--.-.**
 
 To display whole alphabet on 7-seg display we use 7-segment alphabet 'Seikoo' by Alexander Fakoó
 
-<img src="img/7seg_alphabet.png" alt="morse" style="width:450px;"/>
+<img src="images/7seg_alphabet.png" alt="morse" style="width:450px;"/>
 
 Link: 
 [7-segment alphabet 'Seikoo' by Alexander Fakoó in 2012](https://fakoo.de/)
@@ -79,11 +79,11 @@ This component is inspired by:[display driver](https://github.com/tomas-fryza/di
 First 6 7-segment displays are used to display morse code. Last display is used to display normal character or number.
 
 ### Block scheme of the driver
-<img src="img/morse_driver.png" alt="morse_driver"/>
+<img src="images/morse_driver.png" alt="morse_driver"/>
 
 ### Simulation
 This example shows how driver displays character "a" and also demonstrates reset function.
-<img src="img/morse_dirver_sim_char_a.png" alt="morse_driver_sim"/>
+<img src="images/morse_dirver_sim_char_a.png" alt="morse_driver_sim"/>
 
 <a name="top"></a>
 
