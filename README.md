@@ -5,7 +5,7 @@
 * Jan Pelka (responsible for xxx)
 * Jakub Tauber (responsible for xxx)
 * Anton Tsyhanov (responsible for xxx)
-* David Hamran (responsible for display,github)
+* David Hamran (responsible for display driver module, github)
 ### Table of contents
 
 * [Project objectives](#objectives)
