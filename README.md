@@ -23,9 +23,13 @@ Objective of our project is to create a Morse code transmitter. Our approach is 
 
 ### State diagram:
 
+<<<<<<< HEAD
 <img src="images/projekt_state_diagrampng.png" alt="state_diagram" style="width:400px;"/>
 
 
+=======
+<img src="images/project_state_diagram.png" alt="state_diagram" style="width:400px;"/>
+>>>>>>> ced4d6319c00adc06ee68d19755a213c02146aae
 ### Alphabet represented in binary
 
 | **Character** | **Binary** | **Character** | **Binary** | **Character** | **Binary** |
