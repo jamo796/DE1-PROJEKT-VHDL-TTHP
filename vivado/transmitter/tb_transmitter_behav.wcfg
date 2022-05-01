@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="tb_transmitter_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="tb_transmitter" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="0.000 ns"></ZoomStartTime>
+      <ZoomEndTime time="2,500.001 ns"></ZoomEndTime>
+      <Cursor1Time time="999.194 ns"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="220"></NameColumnWidth>
+      <ValueColumnWidth column_width="75"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="9" />
+   <wvobject fp_name="/tb_transmitter/s_clk_100MHz" type="logic">
+      <obj_property name="ElementShortName">s_clk_100MHz</obj_property>
+      <obj_property name="ObjectShortName">s_clk_100MHz</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_transmitter/s_reset" type="logic">
+      <obj_property name="ElementShortName">s_reset</obj_property>
+      <obj_property name="ObjectShortName">s_reset</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_transmitter/s_start" type="logic">
+      <obj_property name="ElementShortName">s_start</obj_property>
+      <obj_property name="ObjectShortName">s_start</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_transmitter/s_data_length" type="array">
+      <obj_property name="ElementShortName">s_data_length[5:0]</obj_property>
+      <obj_property name="ObjectShortName">s_data_length[5:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_transmitter/s_data" type="array">
+      <obj_property name="ElementShortName">s_data[5:0]</obj_property>
+      <obj_property name="ObjectShortName">s_data[5:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_transmitter/s_state" type="array">
+      <obj_property name="ElementShortName">s_state[2:0]</obj_property>
+      <obj_property name="ObjectShortName">s_state[2:0]</obj_property>
+      <obj_property name="Radix">BINARYRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_transmitter/uut_trans/s_t_state" type="other">
+      <obj_property name="ElementShortName">s_t_state</obj_property>
+      <obj_property name="ObjectShortName">s_t_state</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_transmitter/s_transmitter" type="array">
+      <obj_property name="ElementShortName">s_transmitter[2:0]</obj_property>
+      <obj_property name="ObjectShortName">s_transmitter[2:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_transmitter/uut_trans/s_led_state" type="other">
+      <obj_property name="ElementShortName">s_led_state</obj_property>
+      <obj_property name="ObjectShortName">s_led_state</obj_property>
+   </wvobject>
+</wave_config>

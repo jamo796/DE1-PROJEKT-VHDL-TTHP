@@ -2,10 +2,10 @@
 
 ### Team members
 
-* Jan Pelka (responsible for xxx)
-* Jakub Tauber (responsible for xxx)
-* Anton Tsyhanov (responsible for xxx)
-* David Hamran (responsible for [display driver module](#disp_driver), github)
+* Jan Pelka (responsible for wine)
+* Jakub Tauber (responsible for some alcohol)
+* Anton Tsyhanov (responsible for being quiet)
+* David Hamran (responsible for [display driver module](#disp_driver),[transmitter module](#transmitter) ,github)
 ### Table of contents
 
 * [Project objectives](#objectives)
@@ -23,8 +23,7 @@ Objective of our project is to create a Morse code transmitter. Our approach is 
 
 ### State diagram:
 
-![state_diag](images/projekt_state_diagrampng.png)
-
+<img src="images/projekt_state_diagrampng.png" alt="state_diagram" style="width:400px;"/>
 ### Alphabet represented in binary
 
 | **Character** | **Binary** | **Character** | **Binary** | **Character** | **Binary** |
@@ -67,40 +66,88 @@ Link:
 
 <a name="hardware"></a>
 
-## Hardware description
-
+# Hardware description
+<img src="images\hardware\7seg_rgb.png" alt="7seg_rgb"/>
+<img src="images\hardware\n4r.png" alt="board" style="width:450px;"/>
 
 <a name="modules"></a>
 
-## VHDL modules description and simulations
+# VHDL modules description and simulations
+
+### List of modules
+
+* [display driver](https://github.com/MusicalTester63/digital-electronics-1/blob/main/project/vivado/morse_display_driver/morse_display_driver.srcs/sources_1/new/driver_7seg_8digits.vhd)
+* [transmitter](https://github.com/MusicalTester63/digital-electronics-1/blob/main/project/vivado/transmitter/transmitter.srcs/sources_1/new/transmitter.vhd)
+
+### List of components
+
+* [data divider](https://github.com/MusicalTester63/digital-electronics-1/blob/main/project/vivado/morse_display_driver/morse_display_driver.srcs/sources_1/new/data_divider.vhd)
+* [translator](https://github.com/MusicalTester63/digital-electronics-1/blob/main/project/vivado/transmitter/transmitter.srcs/sources_1/new/translator.vhd)
+* [clock enable](https://github.com/MusicalTester63/digital-electronics-1/blob/main/project/vivado/morse_display_driver/morse_display_driver.srcs/sources_1/new/clock_enable.vhd)
+* [counter up down](https://github.com/MusicalTester63/digital-electronics-1/blob/main/project/vivado/morse_display_driver/morse_display_driver.srcs/sources_1/new/cnt_up_down.vhd)
+* [hex 7 seg](https://github.com/MusicalTester63/digital-electronics-1/blob/main/project/vivado/morse_display_driver/morse_display_driver.srcs/sources_1/new/hex_7seg.vhd)
 
 
 <a name="disp_driver"></a>
-### Morse display driver
-This component is inspired by:[display driver](https://github.com/tomas-fryza/digital-electronics-1/tree/master/labs/07-display_driver)
-First 6 7-segment displays are used to display morse code. Last display is used to display normal character or number.
+## Morse display driver
+This component is inspired by: [display driver](https://github.com/tomas-fryza/digital-electronics-1/tree/master/labs/07-display_driver)
+First six 7-segment displays are used to display morse code. Last display is used to display normal character or number.
 
 ### Block scheme of the driver
-<img src="images/morse_driver.png" alt="morse_driver"/>
+<img src="images/morse_driver.png" alt="morse_driver" style="width:600px;"/>
 
 ### Simulation
 This example shows how driver displays character "a" and also demonstrates reset function.
 <img src="images/morse_dirver_sim_char_a.png" alt="morse_driver_sim"/>
 
+
+<a name="transmitter"></a>
+## Morse code transmitter
+This component uses RGB LEDs. Left LED is used to transmit morse code by blinking(DOT) and shining(DASH). Left LED either blinks or shines in green color or it is turned off completely. Right LED is used as state indicator. When red light is shining, transmitter is in the state of inputting. When a button is pressed, transmitters state changes to transmitting which is indicated by yellow light. After transmitting it returns to inputting state indicated by red as mentioned before.
+
+### Block scheme of the transmitter
+<img src="images/transmitter.png" alt="morse_transmitter" style="width:600px;"/>
+
+### Simulation
+This example shows how transmitter translates and transmits character "a" and "b"
+<img src="images/morse_transmitter_sim_char_ab.png" alt="morse_transmitter_sim"/>
+
+
+
+
 <a name="top"></a>
 
-## TOP module description and simulations
+# TOP module description and simulations
 
-Write your text here.
+### List of modules
+
+* [display driver](https://github.com/MusicalTester63/digital-electronics-1/blob/main/project/vivado/morse_display_driver/morse_display_driver.srcs/sources_1/new/driver_7seg_8digits.vhd)
+* [transmitter](https://github.com/MusicalTester63/digital-electronics-1/blob/main/project/vivado/transmitter/transmitter.srcs/sources_1/new/transmitter.vhd)
+
+### Description
+TOP module combines function of display [driver](#disp_driver) and [transmitter](#transmitter)
+with a use of NEXYS A7-50T boards componets such as buttons,switches, LEDs and 7-segment displays.  
+  
+Link to bitstream: [MCT bitstream](https://github.com/MusicalTester63/digital-electronics-1/blob/main/project/vivado/mct.bit)
+
+
+
+### Block scheme of the top
+<img src="images/top.png" alt="top"/>
+
+### Simulation
+This example shows how transmitter displays,translates and transmits character "a" and "b", also shows reset function.
+<img src="images/transmitter_sim_char_ab.png" alt="mct_sim" style="width:1200px;"/>
 
 <a name="video"></a>
 
-## Video
+# Video
 
-Write your text here
+In making.
 
 <a name="references"></a>
 
-## References
+# References
 
-1. Write your text here.
+1.	[7-segment alphabet 'Seikoo' by Alexander Fakoó in 2012](https://fakoo.de/)
+2.	[display driver](https://github.com/tomas-fryza/digital-electronics-1/tree/master/labs/07-display_driver)
