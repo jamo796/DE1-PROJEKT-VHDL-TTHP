@@ -2,10 +2,10 @@
 
 ### Team members
 
-* Jan Pelka (responsible for wine)
-* Jakub Tauber (responsible for some alcohol)
-* Anton Tsyhanov (responsible for being quiet)
-* David Hamran (responsible for [display driver module](#disp_driver),[transmitter module](#transmitter) ,github)
+* Jan Pelka (responsible for VHDL [transmitter module](#transmitter))
+* Jakub Tauber (responsible for VHDL programing and video making)
+* Anton Tsyhanov (responsible for design)
+* David Hamran (responsible for VHDL [display driver module](#disp_driver) and github)  
 ### Table of contents
 
 * [Project objectives](#objectives)
