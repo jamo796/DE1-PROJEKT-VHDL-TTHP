@@ -77,16 +77,16 @@ Link:
 
 ### List of modules
 
-* [display driver](https://github.com/MusicalTester63/digital-electronics-1/blob/main/project/vivado/morse_display_driver/morse_display_driver.srcs/sources_1/new/driver_7seg_8digits.vhd)
-* [transmitter](https://github.com/MusicalTester63/digital-electronics-1/blob/main/project/vivado/transmitter/transmitter.srcs/sources_1/new/transmitter.vhd)
+* [display driver](https://github.com/jamo796/DE1-PROJEKT-VHDL-TTHP/tree/main/vivado/morse_display_driver/morse_display_driver.srcs/sources_1/new)
+* [transmitter](https://github.com/jamo796/DE1-PROJEKT-VHDL-TTHP/tree/main/vivado/transmitter/transmitter.srcs/sources_1/new)
 
 ### List of components
 
-* [data divider](https://github.com/MusicalTester63/digital-electronics-1/blob/main/project/vivado/morse_display_driver/morse_display_driver.srcs/sources_1/new/data_divider.vhd)
-* [translator](https://github.com/MusicalTester63/digital-electronics-1/blob/main/project/vivado/transmitter/transmitter.srcs/sources_1/new/translator.vhd)
-* [clock enable](https://github.com/MusicalTester63/digital-electronics-1/blob/main/project/vivado/morse_display_driver/morse_display_driver.srcs/sources_1/new/clock_enable.vhd)
-* [counter up down](https://github.com/MusicalTester63/digital-electronics-1/blob/main/project/vivado/morse_display_driver/morse_display_driver.srcs/sources_1/new/cnt_up_down.vhd)
-* [hex 7 seg](https://github.com/MusicalTester63/digital-electronics-1/blob/main/project/vivado/morse_display_driver/morse_display_driver.srcs/sources_1/new/hex_7seg.vhd)
+* [data divider](https://github.com/jamo796/DE1-PROJEKT-VHDL-TTHP/tree/main/vivado/morse_display_driver/morse_display_driver.srcs/sources_1/new)
+* [translator](https://github.com/jamo796/DE1-PROJEKT-VHDL-TTHP/blob/main/vivado/mct/mct.srcs/sources_1/new/translator_transmitter/translator.vhd)
+* [clock enable](https://github.com/jamo796/DE1-PROJEKT-VHDL-TTHP/blob/main/vivado/mct/mct.srcs/sources_1/new/clock_enable.vhd)
+* [counter up down](https://github.com/jamo796/DE1-PROJEKT-VHDL-TTHP/blob/main/vivado/mct/mct.srcs/sources_1/new/display_dirver/cnt_up_down.vhd)
+* [hex 7 seg](https://github.com/jamo796/DE1-PROJEKT-VHDL-TTHP/blob/main/vivado/mct/mct.srcs/sources_1/new/display_dirver/hex_7seg.vhd)
 
 
 <a name="disp_driver"></a>
@@ -122,14 +122,14 @@ This example shows how transmitter translates and transmits character "a" and "b
 
 ### List of modules
 
-* [display driver](https://github.com/MusicalTester63/digital-electronics-1/blob/main/project/vivado/morse_display_driver/morse_display_driver.srcs/sources_1/new/driver_7seg_8digits.vhd)
-* [transmitter](https://github.com/MusicalTester63/digital-electronics-1/blob/main/project/vivado/transmitter/transmitter.srcs/sources_1/new/transmitter.vhd)
+* [display driver](https://github.com/jamo796/DE1-PROJEKT-VHDL-TTHP/tree/main/vivado/morse_display_driver/morse_display_driver.srcs/sources_1/new)
+* [transmitter](https://github.com/jamo796/DE1-PROJEKT-VHDL-TTHP/tree/main/vivado/transmitter/transmitter.srcs/sources_1/new)
 
 ### Description
 TOP module combines function of display [driver](#disp_driver) and [transmitter](#transmitter)
 with a use of NEXYS A7-50T boards componets such as buttons,switches, LEDs and 7-segment displays.  
   
-Link to bitstream: [MCT bitstream](https://github.com/MusicalTester63/digital-electronics-1/blob/main/project/vivado/mct.bit)
+Link to bitstream: [MCT bitstream](https://github.com/jamo796/DE1-PROJEKT-VHDL-TTHP/tree/main/bitstream)
 
 
 
