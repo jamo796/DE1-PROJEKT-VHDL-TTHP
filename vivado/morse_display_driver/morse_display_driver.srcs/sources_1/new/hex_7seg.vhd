@@ -90,7 +90,7 @@ p_7seg_decoder : PROCESS (hex_i)
 			WHEN "011001" =>
 				seg_o <= "0010011"; -- Z
 			WHEN "100100" =>
-				seg_o <= "0111000"; -- @
+				seg_o <= "0001011"; -- @ -- puvodni hodnota 0111000
 			WHEN "011010" =>
 				seg_o <= "0000001"; -- 0
 			WHEN "011011" =>
