@@ -144,7 +144,7 @@ This example shows how transmitter displays,translates and transmits character "
 
 # Video
 
-RENDER VIDEA A NAHRÁVANÍ NA YOUTUBE
+https://youtu.be/hfomUJURyNE
 
 
 <a name="references"></a>
