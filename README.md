@@ -82,7 +82,7 @@ Link:
 
 ### List of components
 
-* [data divider](https://github.com/jamo796/DE1-PROJEKT-VHDL-TTHP/tree/main/vivado/morse_display_driver/morse_display_driver.srcs/sources_1/new)
+* [data divider](https://github.com/jamo796/DE1-PROJEKT-VHDL-TTHP/blob/main/vivado/morse_display_driver/morse_display_driver.srcs/sources_1/new/data_divider.vhd)
 * [translator](https://github.com/jamo796/DE1-PROJEKT-VHDL-TTHP/blob/main/vivado/mct/mct.srcs/sources_1/new/translator_transmitter/translator.vhd)
 * [clock enable](https://github.com/jamo796/DE1-PROJEKT-VHDL-TTHP/blob/main/vivado/mct/mct.srcs/sources_1/new/clock_enable.vhd)
 * [counter up down](https://github.com/jamo796/DE1-PROJEKT-VHDL-TTHP/blob/main/vivado/mct/mct.srcs/sources_1/new/display_dirver/cnt_up_down.vhd)
