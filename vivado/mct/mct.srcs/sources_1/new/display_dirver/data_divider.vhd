@@ -43,7 +43,8 @@ BEGIN
 				data2_o <= "100110"; --PRAZDNE
 				data1_o <= "100110"; --PRAZDNE
 				data0_o <= "000000"; --ZOBRAZUJE PISMENO "a"
-				decp_o  <= "10000000"; --bodky
+				decp_o  <= "01111111"; --bodky
+				
 
 			WHEN "000001" =>
 				--ZOBRAZENIE PISMENA "b" "-..."
@@ -55,7 +56,7 @@ BEGIN
 				data2_o <= "100110"; --PRAZDNE
 				data1_o <= "100110"; --PRAZDNE
 				data0_o <= "000001"; --ZOBRAZUJE PISMENO "b"
-				decp_o  <= "01110000"; --bodky
+				decp_o  <= "10001111"; --bodky
 
 			WHEN "000010" =>
 				--ZOBRAZENIE PISMENA "c" "-.-."
@@ -67,7 +68,7 @@ BEGIN
 				data2_o <= "100110"; --PRAZDNE
 				data1_o <= "100110"; --PRAZDNE
 				data0_o <= "000010"; --ZOBRAZUJE PISMENO "c"
-				decp_o  <= "01010000"; --bodky
+				decp_o  <= "10101111"; --bodky
 
 			WHEN "000011" =>
 				--ZOBRAZENIE PISMENA "d" "-.."
@@ -79,7 +80,7 @@ BEGIN
 				data2_o <= "100110"; --PRAZDNE
 				data1_o <= "100110"; --PRAZDNE
 				data0_o <= "000011"; --ZOBRAZUJE PISMENO "d"
-				decp_o  <= "01100000"; --bodky
+				decp_o  <= "10011111"; --bodky
 
 			WHEN "000100" =>
 				--ZOBRAZENIE PISMENA "E" "."
@@ -91,7 +92,7 @@ BEGIN
 				data2_o <= "100110"; --PRAZDNE
 				data1_o <= "100110"; --PRAZDNE
 				data0_o <= "000100"; --ZOBRAZUJE PISMENO "E"
-				decp_o  <= "10000000"; --bodky
+				decp_o  <= "01111111"; --bodky
 
 			WHEN "000101" =>
 				--ZOBRAZENIE PISMENA "F" "..-."
@@ -103,7 +104,7 @@ BEGIN
 				data2_o <= "100110"; --PRAZDNE
 				data1_o <= "100110"; --PRAZDNE
 				data0_o <= "000101"; --ZOBRAZUJE PISMENO "F"
-				decp_o  <= "11010000"; --bodky
+				decp_o  <= "00101111"; --bodky
 
 			WHEN "000110" =>
 				--ZOBRAZENIE PISMENA "G" "--."
@@ -115,7 +116,7 @@ BEGIN
 				data2_o <= "100110"; --PRAZDNE
 				data1_o <= "100110"; --PRAZDNE
 				data0_o <= "000110"; --ZOBRAZUJE PISMENO "G"
-				decp_o  <= "00100000"; --bodky
+				decp_o  <= "11011111"; --bodky
 
 			WHEN "000111" =>
 				--ZOBRAZENIE PISMENA "h" "...."
@@ -127,7 +128,7 @@ BEGIN
 				data2_o <= "100110"; --PRAZDNE
 				data1_o <= "100110"; --PRAZDNE
 				data0_o <= "000111"; --ZOBRAZUJE PISMENO "h"
-				decp_o  <= "11110000"; --bodky
+				decp_o  <= "00001111"; --bodky
 
 			WHEN "001000" =>
 				--ZOBRAZENIE PISMENA "i" ".."
@@ -139,7 +140,7 @@ BEGIN
 				data2_o <= "100110"; --PRAZDNE
 				data1_o <= "100110"; --PRAZDNE
 				data0_o <= "001000"; --ZOBRAZUJE PISMENO "i"
-				decp_o  <= "11000000"; --bodky
+				decp_o  <= "00111111"; --bodky
 
 			WHEN "001001" =>
 				--ZOBRAZENIE PISMENA "j" ".---"
@@ -151,7 +152,7 @@ BEGIN
 				data2_o <= "100110"; --PRAZDNE
 				data1_o <= "100110"; --PRAZDNE
 				data0_o <= "001001"; --ZOBRAZUJE PISMENO "j"
-				decp_o  <= "10000000"; --bodky
+				decp_o  <= "01111111"; --bodky
 
 			WHEN "001010" =>
 				--ZOBRAZENIE PISMENA "k" "-.-"
@@ -163,8 +164,8 @@ BEGIN
 				data2_o <= "100110"; --PRAZDNE
 				data1_o <= "100110"; --PRAZDNE
 				data0_o <= "001010"; --ZOBRAZUJE PISMENO "k"
-				decp_o  <= "01000000"; --bodky
-
+				decp_o  <= "10111111"; --bodky
+				
 			WHEN "001011" =>
 				--ZOBRAZENIE PISMENA "L" ".-.."
 				data7_o <= "100110"; --PRAZDNE
@@ -175,7 +176,7 @@ BEGIN
 				data2_o <= "100110"; --PRAZDNE
 				data1_o <= "100110"; --PRAZDNE
 				data0_o <= "001011"; --ZOBRAZUJE PISMENO "L"
-				decp_o  <= "10110000"; --bodky
+				decp_o  <= "01001111"; --bodky
 
 			WHEN "001100" =>
 				--ZOBRAZENIE PISMENA "M" "--"
@@ -187,7 +188,7 @@ BEGIN
 				data2_o <= "100110"; --PRAZDNE
 				data1_o <= "100110"; --PRAZDNE
 				data0_o <= "001100"; --ZOBRAZUJE PISMENO "M"
-				decp_o  <= "00000000"; --bodky
+				decp_o  <= "11111111"; --bodky
 
 			WHEN "001101" =>
 				--ZOBRAZENIE PISMENA "n" "-."
@@ -199,8 +200,8 @@ BEGIN
 				data2_o <= "100110"; --PRAZDNE
 				data1_o <= "100110"; --PRAZDNE
 				data0_o <= "001101"; --ZOBRAZUJE PISMENO "n"
-				decp_o  <= "01000000"; --bodky
-
+				decp_o  <= "10111111"; --bodky
+				
 			WHEN "001110" =>
 				--ZOBRAZENIE PISMENA "o" "---"
 				data7_o <= "100101"; --CIARKA
@@ -211,8 +212,8 @@ BEGIN
 				data2_o <= "100110"; --PRAZDNE
 				data1_o <= "100110"; --PRAZDNE
 				data0_o <= "001110"; --ZOBRAZUJE PISMENO "o"
-				decp_o  <= "00000000"; --bodky
-
+				decp_o  <= "11111111"; --bodky
+				
 			WHEN "001111" =>
 				--ZOBRAZENIE PISMENA "P" ".--."
 				data7_o <= "100110"; --PRAZDNE
@@ -223,7 +224,7 @@ BEGIN
 				data2_o <= "100110"; --PRAZDNE
 				data1_o <= "100110"; --PRAZDNE
 				data0_o <= "001111"; --ZOBRAZUJE PISMENO "P"
-				decp_o  <= "10010000"; --bodky
+				decp_o  <= "01101111"; --bodky
 
 			WHEN "010000" =>
 				--ZOBRAZENIE PISMENA "q" "--.-"
@@ -235,7 +236,7 @@ BEGIN
 				data2_o <= "100110"; --PRAZDNE
 				data1_o <= "100110"; --PRAZDNE
 				data0_o <= "010000"; --ZOBRAZUJE PISMENO "q"
-				decp_o  <= "00100000"; --bodky
+				decp_o  <= "11011111"; --bodky
 
 			WHEN "010001" =>
 				--ZOBRAZENIE PISMENA "r" ".-."
@@ -247,7 +248,7 @@ BEGIN
 				data2_o <= "100110"; --PRAZDNE
 				data1_o <= "100110"; --PRAZDNE
 				data0_o <= "010001"; --ZOBRAZUJE PISMENO "r"
-				decp_o  <= "10100000"; --bodky
+				decp_o  <= "01011111"; --bodky
 
 			WHEN "010010" =>
 				--ZOBRAZENIE PISMENA "S" "..."
@@ -259,7 +260,7 @@ BEGIN
 				data2_o <= "100110"; --PRAZDNE
 				data1_o <= "100110"; --PRAZDNE
 				data0_o <= "010010"; --ZOBRAZUJE PISMENO "S"
-				decp_o  <= "11100000"; --bodky
+				decp_o  <= "00011111"; --bodky
 
 			WHEN "010011" =>
 				--ZOBRAZENIE PISMENA "t" "-"
@@ -271,7 +272,7 @@ BEGIN
 				data2_o <= "100110"; --PRAZDNE
 				data1_o <= "100110"; --PRAZDNE
 				data0_o <= "010011"; --ZOBRAZUJE PISMENO "t"
-				decp_o  <= "00000000"; --bodky
+				decp_o  <= "11111111"; --bodky				
 
 			WHEN "010100" =>
 				--ZOBRAZENIE PISMENA "u" "..-"
@@ -283,7 +284,7 @@ BEGIN
 				data2_o <= "100110"; --PRAZDNE
 				data1_o <= "100110"; --PRAZDNE
 				data0_o <= "010100"; --ZOBRAZUJE PISMENO "u"
-				decp_o  <= "11000000"; --bodky
+				decp_o  <= "00111111"; --bodky
 
 			WHEN "010101" =>
 				--ZOBRAZENIE PISMENA "v" "...-"
@@ -295,7 +296,7 @@ BEGIN
 				data2_o <= "100110"; --PRAZDNE
 				data1_o <= "100110"; --PRAZDNE
 				data0_o <= "010101"; --ZOBRAZUJE PISMENO "v"
-				decp_o  <= "11100000"; --bodky
+				decp_o  <= "00011111"; --bodky
 
 			WHEN "010110" =>
 				--ZOBRAZENIE PISMENA "w" ".--"
@@ -307,7 +308,7 @@ BEGIN
 				data2_o <= "100110"; --PRAZDNE
 				data1_o <= "100110"; --PRAZDNE
 				data0_o <= "010110"; --ZOBRAZUJE PISMENO "w"
-				decp_o  <= "10000000"; --bodky
+				decp_o  <= "01111111"; --bodky
 
 			WHEN "010111" =>
 				--ZOBRAZENIE PISMENA "x" "-..-"
@@ -319,7 +320,7 @@ BEGIN
 				data2_o <= "100110"; --PRAZDNE
 				data1_o <= "100110"; --PRAZDNE
 				data0_o <= "010111"; --ZOBRAZUJE PISMENO "x"
-				decp_o  <= "01100000"; --bodky
+				decp_o  <= "10011111"; --bodky
 
 			WHEN "011000" =>
 				--ZOBRAZENIE PISMENA "y" "-.--"
@@ -331,7 +332,7 @@ BEGIN
 				data2_o <= "100110"; --PRAZDNE
 				data1_o <= "100110"; --PRAZDNE
 				data0_o <= "011000"; --ZOBRAZUJE PISMENO "y"
-				decp_o  <= "01000000"; --bodky
+				decp_o  <= "10111111"; --bodky
 
 			WHEN "011001" =>
 				--ZOBRAZENIE PISMENA "Z" "--.."
@@ -343,7 +344,7 @@ BEGIN
 				data2_o <= "100110"; --PRAZDNE
 				data1_o <= "100110"; --PRAZDNE
 				data0_o <= "011001"; --ZOBRAZUJE PISMENO "Z"
-				decp_o  <= "01100000"; --bodky
+				decp_o  <= "11001111"; --bodky
 
 			WHEN "100100" =>
 				--ZOBRAZENIE ZNAKU "@" ".--.-."
@@ -355,7 +356,7 @@ BEGIN
 				data2_o <= "100110"; --PRAZDNE
 				data1_o <= "100110"; --PRAZDNE
 				data0_o <= "100100"; --ZOBRAZUJE ZNAK "@"
-				decp_o  <= "10010100"; --bodky
+				decp_o  <= "01101011"; --bodky
 
 			WHEN "011010" =>
 				--ZOBRAZENIE ZNAKU "0" "-----"
@@ -367,7 +368,7 @@ BEGIN
 				data2_o <= "100110"; --PRAZDNE
 				data1_o <= "100110"; --PRAZDNE
 				data0_o <= "011010"; --ZOBRAZUJE ZNAK "0"
-				decp_o  <= "00000000"; --bodky
+				decp_o  <= "11111111"; --bodky
 
 
 			WHEN "011011" =>
@@ -380,7 +381,7 @@ BEGIN
 				data2_o <= "100110"; --PRAZDNE
 				data1_o <= "100110"; --PRAZDNE
 				data0_o <= "011011"; --ZOBRAZUJE ZNAK "1"
-				decp_o  <= "10000000"; --bodky
+				decp_o  <= "01111111"; --bodky
 
 			WHEN "011100" =>
 				--ZOBRAZENIE ZNAKU "2" "..---"
@@ -392,7 +393,7 @@ BEGIN
 				data2_o <= "100110"; --PRAZDNE
 				data1_o <= "100110"; --PRAZDNE
 				data0_o <= "011100"; --ZOBRAZUJE ZNAK "2"
-				decp_o  <= "11000000"; --bodky
+				decp_o  <= "00111111"; --bodky
 
 			WHEN "011101" =>
 				--ZOBRAZENIE ZNAKU "3" "...--"
@@ -404,7 +405,7 @@ BEGIN
 				data2_o <= "100110"; --PRAZDNE
 				data1_o <= "100110"; --PRAZDNE
 				data0_o <= "011101"; --ZOBRAZUJE ZNAK "3"
-				decp_o  <= "11100000"; --bodky
+				decp_o  <= "00011111"; --bodky
 
 
 			WHEN "011110" =>
@@ -417,7 +418,7 @@ BEGIN
 				data2_o <= "100110"; --PRAZDNE
 				data1_o <= "100110"; --PRAZDNE
 				data0_o <= "011110"; --ZOBRAZUJE ZNAK "4"
-				decp_o  <= "11110000"; --bodky
+				decp_o  <= "00001111"; --bodky
 
 			WHEN "011111" =>
 				--ZOBRAZENIE ZNAKU "5" "....."
@@ -429,7 +430,7 @@ BEGIN
 				data2_o <= "100110"; --PRAZDNE
 				data1_o <= "100110"; --PRAZDNE
 				data0_o <= "011111"; --ZOBRAZUJE ZNAK "5"
-				decp_o  <= "11111000"; --bodky
+				decp_o  <= "00000111"; --bodky
 
 
 			WHEN "100000" =>
@@ -442,7 +443,7 @@ BEGIN
 				data2_o <= "100110"; --PRAZDNE
 				data1_o <= "100110"; --PRAZDNE
 				data0_o <= "100000"; --ZOBRAZUJE ZNAK "6"
-				decp_o  <= "01111000"; --bodky
+				decp_o  <= "10000111"; --bodky
 
 
 			WHEN "100001" =>
@@ -455,7 +456,7 @@ BEGIN
 				data2_o <= "100110"; --PRAZDNE
 				data1_o <= "100110"; --PRAZDNE
 				data0_o <= "100001"; --ZOBRAZUJE ZNAK "7"
-				decp_o  <= "00111000"; --bodky
+				decp_o  <= "11000111"; --bodky
 
 
 			WHEN "100010" =>
@@ -468,7 +469,7 @@ BEGIN
 				data2_o <= "100110"; --PRAZDNE
 				data1_o <= "100110"; --PRAZDNE
 				data0_o <= "100010"; --ZOBRAZUJE ZNAK "8"
-				decp_o  <= "00011000"; --bodky
+				decp_o  <= "11100111"; --bodky
 
 
 			WHEN "100011" =>
@@ -481,7 +482,7 @@ BEGIN
 				data2_o <= "100110"; --PRAZDNE
 				data1_o <= "100110"; --PRAZDNE
 				data0_o <= "100011"; --ZOBRAZUJE ZNAK "9"
-				decp_o  <= "00001000"; --bodky
+				decp_o  <= "11110111"; --bodky
 
 
 
@@ -495,7 +496,7 @@ BEGIN
 				data2_o <= "100110"; --PRAZDNE
 				data1_o <= "100110"; --PRAZDNE
 				data0_o <= "100110"; --PRAZDNE
-				decp_o  <= "00000000"; --bodky(PRAZDNE)
+				decp_o  <= "11111111"; --bodky(PRAZDNE)
 
 
 		END CASE;

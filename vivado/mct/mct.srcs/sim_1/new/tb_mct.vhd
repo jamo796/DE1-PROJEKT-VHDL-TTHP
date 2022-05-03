@@ -97,10 +97,15 @@ BEGIN
 				s_start <= '1';
 				WAIT FOR 20 ns;
 				s_start <= '0';
-				WAIT FOR 300 ns;
+				WAIT FOR 250 ns;
+				
+				s_start <= '0';
+				WAIT FOR 100 ns;
 				s_start <= '1';
 				WAIT FOR 20 ns;
 				s_start <= '0';
+				
+				
 				WAIT;
 			END PROCESS p_start;
 			--------------------------------------------------------
@@ -109,9 +114,22 @@ BEGIN
 			p_stimulus : PROCESS
 			BEGIN
 				s_data <= "000000";--a
-				WAIT FOR 360 ns;
-
+				WAIT FOR 345 ns;
 				s_data <= "000001";--b
+				WAIT FOR 345 ns;
+				s_data <= "000010";--c
+				WAIT FOR 345 ns;
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
 				WAIT;
 			END PROCESS p_stimulus;
 END ARCHITECTURE testbench;

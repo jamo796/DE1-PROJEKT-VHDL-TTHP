@@ -15,13 +15,6 @@
 *.rpt
 *.vdi
 
-## bitstream
-*.bit
-*.bin
-*.mcs
-*.svf
-*.image
-
 ## netlist
 *.edf
 *.edif
