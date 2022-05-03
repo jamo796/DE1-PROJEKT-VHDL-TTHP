@@ -146,7 +146,7 @@ This example shows how transmitter displays,translates and transmits character "
 
 In making.
 
-https://www.youtube.com/watch?v=WLURp06DthM 
+[![]()](https://www.youtube.com/watch?v=WLURp06DthM "Click to play on Youtube.com") 
 
 <a name="references"></a>
 
