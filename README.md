@@ -144,7 +144,9 @@ This example shows how transmitter displays,translates and transmits character "
 
 # Video
 
-[![Morse code transmitter](https://img.youtube.com/vi/hfomUJURyNE/0.jpg)](https://youtu.be/hfomUJURyNE)
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/hfomUJURyNE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 
 <a name="references"></a>
 
