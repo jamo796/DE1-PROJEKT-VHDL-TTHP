@@ -144,7 +144,7 @@ This example shows how transmitter displays,translates and transmits character "
 
 # Video
 
-https://youtu.be/hfomUJURyNE
+[!](https://youtu.be/hfomUJURyNE)
 
 
 <a name="references"></a>
