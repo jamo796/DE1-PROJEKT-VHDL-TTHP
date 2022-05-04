@@ -1,11 +1,8 @@
 # MORSE CODE TRANSMITTER
 
-### !!!WARNING!!!
-
-> _**Simulations show dot as high state, this is to clearly demonstrate that the 7-segment display is displaying a dot. In the implementation dot is represented by low state.**_
-
-
-
+>Every child has a dream, to pursue the dream is in every child's hand to make it a reality. One's invention is another's tool...  
+>  
+> **- Samuel Finley Breese Morse**
 
 ### Team members
 
@@ -82,6 +79,10 @@ Link:
 <a name="modules"></a>
 
 # VHDL modules description and simulations
+
+### !!!WARNING!!!
+
+> _**Simulations show dot as high state, this is to clearly demonstrate that the 7-segment display is displaying a dot. In the implementation dot is represented by low state.**_
 
 ### List of modules
 
